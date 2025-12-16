@@ -88,6 +88,18 @@
             <a href="#"><i class="fab fa-vk"></i></a>                 <a href="#"><i class="fab fa-telegram-plane"></i></a>                 <a href="#"><i class="fab fa-youtube"></i></a>                 <a href="#"><i class="fab fa-linkedin-in"></i></a>                        </div>
         <p>&copy; 1995 KNIGGA inc. Все права защищены.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(function(button) {                
+                button.addEventListener('click', function(event) {                   
+                    event.preventDefault();                    
+                    alert('Спасибо за покупку! \n\nВаш заказ оформлен.');
+                });
+            });
+        });
+    </script>
 
 </body>
 
